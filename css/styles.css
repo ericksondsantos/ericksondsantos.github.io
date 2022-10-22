@@ -41,11 +41,11 @@ p {
 }
 
 hr{
-  border: dotted #EAF6F6;
+  border: dotted #40514E;
   border-bottom: none;
   width: 6px;
   width: 4%;
-  margin: 100px auto 100px auto;
+  margin: 50px auto 50px auto;
 }
 
 .top-container {
