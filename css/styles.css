@@ -49,7 +49,6 @@ hr{
 }
 
 .top-container {
-  background-color: #EDE6DB;
   position: relative;
   padding-top: 100px;
 }
@@ -99,6 +98,10 @@ hr{
   position: absolute;
   left: 250px;
   bottom: 300px;
+}
+
+.mimi-img {
+  width: 25%;ß
 }
 
 .profile-img {
