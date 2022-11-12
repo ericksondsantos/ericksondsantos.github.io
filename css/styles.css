@@ -23,15 +23,6 @@ h1 {
   font-size: 2rem;
 }
 
-.nav-item {
-  padding: 0 18px;
-}
-
-.nav-link {
-  font-weight: lighter;
-  font-size: 1.5rem;
-}
-
 .wave {
   background: rgba(64, 0, 64, 0.5);
   border-radius: 0 0 1000% 1000%;
@@ -214,4 +205,21 @@ h1 {
   100% {
     transform: translateX(1);
   }
+}
+
+@media (max-width: 1028px) {
+
+  .container-fluid {
+    padding: 2% 10%;
+  }
+
+  .navbar {
+    padding: 0 0 4.5rem;
+  }
+
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 5rem;
+  }
+
 }
