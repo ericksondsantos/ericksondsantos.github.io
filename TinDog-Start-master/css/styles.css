@@ -1,33 +1,11 @@
 body {
   font-family: "Montserrat";
+  text-align: center;
 }
 
-#title {
-  background-color: #ff4c68;
-  color: #ffffff;
-}
-
-.container-fluid {
-  padding: 3% 15% 7%;
-}
-
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat";
   font-weight: bold;
-  font-size: 3.5rem;
-  line-height: 1.5;
-}
-
-h2 {
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-size: 3rem;
-}
-
-h3 {
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-size: 2rem;
 }
 
 p {
@@ -35,6 +13,10 @@ p {
 }
 
 /* Navigation Bar */
+
+.container-fluid {
+  padding: 7% 15%;
+}
 
 .navbar {
   padding: 0 0 4.5rem;
@@ -58,6 +40,21 @@ p {
 
 /* Title Section */
 
+#title {
+  background-color: #ff4c68;
+  color: #ffffff;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.title-header {
+  text-align: left;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
 .dl-btn {
   margin: 5% 3% 5% 0;
 }
@@ -72,7 +69,6 @@ p {
 /* Features Section */
 
 #features {
-  padding: 5% 15%;
   background-color: #ffffff;
   position: relative;
   z-index: 1;
@@ -89,20 +85,18 @@ p {
 }
 
 .features-col {
-  text-align: center;
   padding: 8%;
 }
 
 /* Testimonials Section */
 
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
   color: #ffffff;
 }
 
-.carousel-item {
-  padding: 5% 15%;
+.testimonial-txt {
+  font-size: 3rem;
 }
 
 .testimonial-img {
@@ -114,8 +108,6 @@ p {
 /* Press Section */
 
 #press {
-  padding: 0 0 5%;
-  text-align: center;
   background-color: #ef8172;
 }
 
@@ -127,32 +119,37 @@ p {
 /* Pricing Section */
 
 #pricing {
-  text-align: center;
-  padding: 5% 15%;
   background-color: #ffffff;
+}
+
+.pricing-header {
+  font-size: 3rem;
+}
+
+.pricing-name {
+  font-size: 2rem;
 }
 
 .pricing-col {
   padding: 3% 2%;
 }
 
+/* Call to Action Section */
+
 #cta {
   background-color: #ff4c68;
   color: #ffffff;
-  text-align: center;
-  padding: 3% 25%;
 }
 
 .cta-header {
-  font-family: "Montserrat";
-  font-style: black;
   font-size: 3.5rem;
   line-height: 1.5;
 }
 
+/* Footer Section */
+
 #footer {
-  text-align: center;
-  padding: 3% 35%;
+  background-color: #ffffff;
 }
 
 .footer-img {
@@ -164,6 +161,8 @@ p {
 .footer-img:hover {
   color: #ff4c68;
 }
+
+/* Media */
 
 @media (max-width: 1028px) {
 
