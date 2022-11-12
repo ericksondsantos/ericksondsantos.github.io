@@ -140,7 +140,7 @@ p {
   background-color: #ff4c68;
   color: #ffffff;
   text-align: center;
-  padding: 3% 35% 3% 35%
+  padding: 3% 25%;
 }
 
 .cta-header {
@@ -152,11 +152,17 @@ p {
 
 #footer {
   text-align: center;
-  padding: 3% 35% 3% 35%
+  padding: 3% 35%;
 }
 
 .footer-img {
-  margin: 25px;
+  font-size: 2em;
+  color: #ef8172;
+  margin: 1rem;
+}
+
+.footer-img:hover {
+  color: #ff4c68;
 }
 
 @media (max-width: 1028px) {
