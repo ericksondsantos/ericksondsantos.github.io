@@ -4,7 +4,7 @@ body {
 
 #title {
   background-color: #ff4c68;
-  color: #fff;
+  color: #ffffff;
 }
 
 .container-fluid {
@@ -65,12 +65,16 @@ p {
 .title-img {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
 }
 
 /* Features Section */
 
 #features {
   padding: 5% 15%;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
 }
 
 .features-img {
@@ -91,10 +95,13 @@ p {
 /* Testimonials Section */
 
 #testimonials {
-  padding: 5% 15%;
   text-align: center;
   background-color: #ef8172;
   color: #ffffff;
+}
+
+.carousel-item {
+  padding: 5% 15%;
 }
 
 .testimonial-img {
@@ -106,12 +113,23 @@ p {
 /* Press Section */
 
 #press {
-  padding-bottom: 5%;
+  padding: 0 0 5%;
   text-align: center;
   background-color: #ef8172;
 }
 
 .press-img {
-  width: 8%;
+  width: 10%;
   margin: 20px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  text-align: center;
+  padding: 5% 15%;
+}
+
+.pricing-col {
+  padding: 3% 2%;
 }
