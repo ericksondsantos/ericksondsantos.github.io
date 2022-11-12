@@ -149,6 +149,7 @@ p {
 }
 
 @media (max-width: 1028px) {
+
   .title-img {
     position: static;
     transform: rotate(0);
@@ -157,9 +158,5 @@ p {
   #title {
     text-align: center;
   }
-
-  .press-img {
-    width: 30%;
-    margin: 20px;
-  }
+  
 }
