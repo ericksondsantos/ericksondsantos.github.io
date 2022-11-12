@@ -156,7 +156,7 @@ p {
 }
 
 .footer-img {
-  margin: 5% 5% 5% 5%;
+  margin: 25px;
 }
 
 @media (max-width: 1028px) {
@@ -171,7 +171,7 @@ p {
   }
 
   .press-img {
-    width: 30%;
+    width: 20%;
   }
 
 }
