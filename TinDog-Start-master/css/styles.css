@@ -97,7 +97,7 @@ p {
   color: #ffffff;
 }
 
-.testimonials-img {
+.testimonial-img {
   width: 10%;
   border-radius: 100%;
   margin: 20px;
@@ -106,7 +106,7 @@ p {
 /* Press Section */
 
 #press {
-  padding: 0 0 5%;
+  padding-bottom: 5%;
   text-align: center;
   background-color: #ef8172;
 }
