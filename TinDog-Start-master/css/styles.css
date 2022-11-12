@@ -120,7 +120,7 @@ p {
 }
 
 .press-img {
-  width: 10%;
+  width: 50%;
   margin: 20px;
 }
 
@@ -129,10 +129,23 @@ p {
 #pricing {
   text-align: center;
   padding: 5% 15%;
+  background-color: #ffffff;
 }
 
 .pricing-col {
   padding: 3% 2%;
+}
+
+#cta {
+  background-color: #ff4c68;
+  color: #ffffff;
+  text-align: center;
+  padding: 3% 35% 3% 35%
+}
+
+#footer {
+  text-align: center;
+  padding: 3% 35% 3% 35%
 }
 
 @media (max-width: 1028px) {
@@ -143,5 +156,10 @@ p {
 
   #title {
     text-align: center;
+  }
+
+  .press-img {
+    width: 30%;
+    margin: 20px;
   }
 }
