@@ -65,12 +65,6 @@ a:link, a:visited, a:hover, a:active {
 
 /* Footer */
 
-#footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
-
 .footer-img {
   color: #ffffff;
   padding: 3% 5%;
