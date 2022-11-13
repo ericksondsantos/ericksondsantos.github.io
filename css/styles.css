@@ -31,10 +31,6 @@ a:link, a:visited, a:hover, a:active {
 
 /* Main */
 
-#main .container {
-  height: 30rem;
-}
-
 .card-main {
   padding: 3% 2%;
 }
