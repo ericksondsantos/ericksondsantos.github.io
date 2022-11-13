@@ -13,6 +13,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
 /* Top */
 
 .container {
@@ -35,7 +39,33 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
 }
 
+.card-text {
+  display: none;
+  visibility: collapse;
+}
+
+#about:hover ~ .about {
+    display: block;
+    visibility: visible;
+}
+
+#education:hover ~ .education {
+    display: block;
+    visibility: visible;
+}
+
+#experience:hover ~ .experience {
+    display: block;
+    visibility: visible;
+}
+
 /* Footer */
+
+#footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
 
 .footer-img {
   color: #ffffff;
@@ -265,6 +295,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .top-header {
     font-size: 4rem;
+    text-align: center;
   }
 
   .card-title {
