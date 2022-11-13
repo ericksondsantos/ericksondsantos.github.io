@@ -1,7 +1,7 @@
 body {
   font-family: 'Amatic SC', cursive;
   margin: auto;
-  overflow: auto;
+  overflow:hidden;
   background: linear-gradient(360deg, rgba(64, 0, 64, 1) 10%, rgba(0, 0, 0, 1) 100%);
   background-attachment: fixed;
 }
@@ -21,6 +21,7 @@ h1 {
 .navbar-brand {
   font-weight: bold;
   font-size: 2rem;
+  margin: auto;
 }
 
 .wave {
@@ -59,7 +60,7 @@ h1 {
 
 .circles li {
   position: absolute;
-  font-size: 30px;
+  font-size: 100px;
   list-style: none;
   width: 20px;
   height: 20px;
@@ -172,6 +173,22 @@ h1 {
   animation-duration: 18s;
 }
 
+.bounce:hover {
+  position: relative;
+  display: inline-block;
+  animation: bounce 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(10)
+  }
+  20% {
+    transform: translateY(-5px)
+  }
+}
+
 @keyframes falling {
   0% {
     transform: translate3d(0, 0, 0) rotate(0deg);
@@ -211,10 +228,6 @@ h1 {
 
   .container-fluid {
     padding: 2% 10%;
-  }
-
-  .navbar {
-    padding: 0 0 4.5rem;
   }
 
   .navbar-brand {
