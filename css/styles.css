@@ -42,7 +42,7 @@ a:link, a:visited, a:hover, a:active {
 
 .card-text {
   display: none;
-  visibility: collapse;
+  visibility: hidden;
 }
 
 #about:hover ~ .about {
@@ -61,6 +61,26 @@ a:link, a:visited, a:hover, a:active {
     display: block;
     visibility: visible;
     animation: 2s show ease-out;
+}
+
+/* Main animation */
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 /* Footer */
@@ -284,25 +304,6 @@ a:link, a:visited, a:hover, a:active {
     transform: translateX(1);
   }
 }
-
-@keyframes show {
-  0% {
-    opacity: 0;
-    transform: translateY(80%);
-  }
-  20% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-
 
 @media (max-width: 1028px) {
 
