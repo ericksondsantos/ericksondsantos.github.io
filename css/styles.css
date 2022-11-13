@@ -192,19 +192,24 @@ h1, h2, h3, h4, h5, h6 {
   animation-duration: 18s;
 }
 
-.bounce:hover {
+.bounce {
   position: relative;
+  top: 10px;
   display: inline-block;
-  animation: bounce 1s infinite;
+}
+
+.bounce:hover {
+
+  animation: bounce 2s infinite;
   animation-delay: calc(.1s * var(--i));
 
 }
 @keyframes bounce {
   0% {
-    transform: translateY(10)
+    transform: translateY(10px)
   }
   20% {
-    transform: translateY(-5px)
+    transform: translateY(-10px)
   }
 }
 
