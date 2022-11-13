@@ -245,10 +245,6 @@ h1 {
 
 @media (max-width: 1028px) {
 
-  body {
-    font-size: 3rem;
-  }
-
   .container-fluid {
     padding: 2% 10%;
   }
@@ -256,6 +252,14 @@ h1 {
   .navbar-brand {
     font-weight: bold;
     font-size: 5rem;
+  }
+
+  .main-header {
+    font-size: 4rem;
+  }
+
+  .main-txt {
+    font-size: 3rem;
   }
 
 }
