@@ -43,6 +43,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2rem;
 }
 
+.footer-img:hover {
+  opacity: .5;
+}
+
 .copyright {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
