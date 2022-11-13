@@ -4,40 +4,35 @@ body {
   background: linear-gradient(360deg, rgba(64, 0, 64, 1) 10%, rgba(0, 0, 0, 1) 100%);
   background-attachment: fixed;
   text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
+  color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Amatic SC', cursive;
-}
-
-/* Heading */
-
-.container-fluid {
-  padding: 2% 20%;
-}
-
-.navbar {
-  padding: 0 0 4.5rem;
-}
-
-.navbar-brand {
   font-weight: bold;
-  font-size: 2rem;
+}
+
+/* Top */
+
+.container {
+  padding: 2% 4%;
+}
+
+.top-header {
+  text-align: left;
+  color: #ffffff;
 }
 
 /* Main */
 
-.main-col {
+.card-main {
   padding: 3% 2%;
 }
 
-.main-header {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.main-txt {
-  font-size: 2rem;
+.card-title {
+  background-color: rgba(255,255,255,.25);
+  border-radius: 10px;
 }
 
 /* Footer */
@@ -49,6 +44,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .copyright {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
   color: #ffffff;
 }
 
@@ -208,19 +205,15 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   top: 10px;
   display: inline-block;
-}
-
-.bounce:hover {
-
   animation: bounce 2s infinite;
-  animation-delay: calc(.1s * var(--i));
 
 }
+
 @keyframes bounce {
   0% {
-    transform: translateY(10px)
+    transform: translateY(0)
   }
-  20% {
+  50% {
     transform: translateY(-10px)
   }
 }
@@ -262,21 +255,26 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1028px) {
 
-  .container-fluid {
-    padding: 2% 10%;
+  .container {
+    padding: 3% 10%;
   }
 
-  .navbar-brand {
-    font-weight: bold;
-    font-size: 5rem;
-  }
-
-  .main-header {
+  .top-header {
     font-size: 4rem;
   }
 
-  .main-txt {
+  .card-title {
+    font-size: 4rem;
+  }
+
+  .card-text {
     font-size: 3rem;
+  }
+
+  .footer-img {
+    color: #ffffff;
+    padding: 3% 5%;
+    font-size: 4rem;
   }
 
 }
