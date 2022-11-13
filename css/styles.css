@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
+  color: inherit;
 }
 
 /* Top */
@@ -47,16 +48,19 @@ a:link, a:visited, a:hover, a:active {
 #about:hover ~ .about {
     display: block;
     visibility: visible;
+    animation: 2s show ease-out;
 }
 
 #education:hover ~ .education {
     display: block;
     visibility: visible;
+    animation: 2s show ease-out;
 }
 
 #experience:hover ~ .experience {
     display: block;
     visibility: visible;
+    animation: 2s show ease-out;
 }
 
 /* Footer */
@@ -286,6 +290,25 @@ a:link, a:visited, a:hover, a:active {
     transform: translateX(1);
   }
 }
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
 
 @media (max-width: 1028px) {
 
