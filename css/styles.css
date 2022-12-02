@@ -42,8 +42,8 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .card-text {
-  /* display: none;
-  visibility: hidden; */
+  display: none;
+  visibility: hidden;
   margin: 25px 0;
   text-align: left;
 }
@@ -56,7 +56,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 
-/* #about:hover ~ .about {
+#about:hover ~ .about {
     display: block;
     visibility: visible;
     animation: 2s show;
@@ -72,7 +72,7 @@ a:link, a:visited, a:hover, a:active {
     display: block;
     visibility: visible;
     animation: 2s show;
-} */
+}
 
 /* Main animation */
 
