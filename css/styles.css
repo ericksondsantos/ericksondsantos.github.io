@@ -6,7 +6,7 @@ body {
   background-attachment: fixed;
   text-align: center;
   font-family: 'Amatic SC', cursive;
-  font-size: 2rem;
+  font-size: 1.8em;
   color: #ffffff;
 }
 
@@ -42,17 +42,21 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .card-text {
-  display: none;
-  visibility: hidden;
+  /* display: none;
+  visibility: hidden; */
   margin: 25px 0;
+  text-align: left;
 }
 
 .profile-img {
   float: left;
+  border-radius: 25px;
+  width: 150px;
+  margin: 0 20px 0 0;
 }
 
 
-#about:hover ~ .about {
+/* #about:hover ~ .about {
     display: block;
     visibility: visible;
     animation: 2s show;
@@ -68,7 +72,7 @@ a:link, a:visited, a:hover, a:active {
     display: block;
     visibility: visible;
     animation: 2s show;
-}
+} */
 
 /* Main animation */
 
@@ -86,7 +90,7 @@ a:link, a:visited, a:hover, a:active {
 /* Footer */
 
 #footer {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   bottom: 0;
   background-color: #000000;
