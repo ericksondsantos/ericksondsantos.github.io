@@ -1,13 +1,15 @@
 body {
   margin: auto;
   overflow-x: hidden;
-  /* background: linear-gradient(360deg, rgba(64, 0, 64, 1) 10%, rgba(0, 0, 0, 1) 100%); */
   background: linear-gradient(360deg, rgba(64, 66, 88, 1) 10%, rgba(0, 0, 0, 1) 100%);
   background-attachment: fixed;
   text-align: center;
   font-family: 'Amatic SC', cursive;
   font-size: 1.8em;
   color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,7 +47,7 @@ a:link, a:visited, a:hover, a:active {
   display: none;
   visibility: hidden;
   margin: 25px 0;
-  text-align: left;
+  text-align: justify;
 }
 
 .profile-img {
@@ -90,10 +92,10 @@ a:link, a:visited, a:hover, a:active {
 /* Footer */
 
 #footer {
-  /* position: absolute; */
   width: 100%;
   bottom: 0;
   background-color: #000000;
+  margin-top: auto;
 }
 
 .footer-img {
@@ -193,7 +195,7 @@ a:link, a:visited, a:hover, a:active {
     text-align: center;
   }
 
-  .card-title {
+  /* .card-title {
     font-size: 4rem;
   }
 
@@ -205,6 +207,6 @@ a:link, a:visited, a:hover, a:active {
     color: #ffffff;
     padding: 3% 5%;
     font-size: 4rem;
-  }
+  } */
 
 }
