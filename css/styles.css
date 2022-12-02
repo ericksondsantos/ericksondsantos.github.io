@@ -5,7 +5,7 @@ body {
   background-attachment: fixed;
   text-align: center;
   font-family: 'Amatic SC', cursive;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   color: #ffffff;
   min-height: 100vh;
   display: flex;
@@ -186,6 +186,11 @@ a:link, a:visited, a:hover, a:active {
 
 @media (max-width: 1028px) {
 
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
   .container {
     padding: 3% 10%;
   }
@@ -195,18 +200,18 @@ a:link, a:visited, a:hover, a:active {
     text-align: center;
   }
 
-  /* .card-title {
+  .card-title {
     font-size: 4rem;
   }
 
   .card-text {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .footer-img {
     color: #ffffff;
     padding: 3% 5%;
     font-size: 4rem;
-  } */
+  }
 
 }
