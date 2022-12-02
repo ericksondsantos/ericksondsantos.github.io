@@ -55,19 +55,19 @@ a:link, a:visited, a:hover, a:active {
 #about:hover ~ .about {
     display: block;
     visibility: visible;
-    animation: 2s show ease-out;
+    animation: 2s show;
 }
 
 #education:hover ~ .education {
     display: block;
     visibility: visible;
-    animation: 2s show ease-out;
+    animation: 2s show;
 }
 
 #experience:hover ~ .experience {
     display: block;
     visibility: visible;
-    animation: 2s show ease-out;
+    animation: 2s show;
 }
 
 /* Main animation */
@@ -75,14 +75,7 @@ a:link, a:visited, a:hover, a:active {
 @keyframes show {
   0% {
     opacity: 0;
-    transform: translateY(80%);
-  }
-  20% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(0%);
+    transform: translateY(-10%);
   }
   100% {
     opacity: 1;
