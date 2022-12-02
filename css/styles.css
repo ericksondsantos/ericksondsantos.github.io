@@ -44,6 +44,7 @@ a:link, a:visited, a:hover, a:active {
 .card-text {
   display: none;
   visibility: hidden;
+  margin: 25px 0;
 }
 
 .profile-img {
