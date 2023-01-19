@@ -48,6 +48,7 @@ a:link, a:visited, a:hover, a:active {
   visibility: hidden;
   margin: 25px 0;
   text-align: justify;
+  background-image: url("images/paper.png");
 }
 
 .profile-img {
@@ -96,6 +97,7 @@ a:link, a:visited, a:hover, a:active {
   bottom: 0;
   background-color: #000000;
   margin-top: auto;
+  position: fixed;
 }
 
 .footer-img {
