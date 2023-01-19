@@ -145,6 +145,12 @@ a:link, a:visited, a:hover, a:active {
   opacity: 0.9;
 }
 
+.wave:nth-of-type(4) {
+  top: -2.5em;
+  animation: wave 50s -1s reverse infinite;
+  opacity: 0.5;
+}
+
 .bounce {
   position: relative;
   top: 10px;
