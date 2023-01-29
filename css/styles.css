@@ -23,6 +23,11 @@ a:link, a:visited, a:hover, a:active {
 
 /* Top */
 
+#top {
+  z-index: 1;
+  position: sticky;
+}
+
 .container {
   padding: 2% 4%;
 }
@@ -34,21 +39,25 @@ a:link, a:visited, a:hover, a:active {
 
 /* Main */
 
-.card-main {
-  padding: 3% 2%;
+#main {
+  z-index: 0;
 }
 
-.card-title {
-  background-color: rgba(255,255,255,.25);
-  border-radius: 10px;
+#nav-about-tab, #nav-education-tab, #nav-experience-tab {
+  filter: blur(2px);
 }
 
-.card-text {
-  display: none;
-  visibility: hidden;
-  margin: 25px 0;
-  text-align: justify;
-  background-image: url("images/paper.png");
+#nav-about-tab[aria-selected="true"], #nav-education-tab:focus, #nav-experience-tab:focus {
+  filter: blur(0px);
+}
+
+#nav-tab-content {
+  padding: 3% 0;
+  text-align: left;
+}
+
+#nav-about, #nav-education, #nav-experience {
+  animation: 3s show;
 }
 
 .profile-img {
@@ -58,35 +67,16 @@ a:link, a:visited, a:hover, a:active {
   margin: 10px 20px 0 0;
 }
 
-
-#about:hover ~ .about {
-    display: block;
-    visibility: visible;
-    animation: 2s show;
-}
-
-#education:hover ~ .education {
-    display: block;
-    visibility: visible;
-    animation: 2s show;
-}
-
-#experience:hover ~ .experience {
-    display: block;
-    visibility: visible;
-    animation: 2s show;
-}
-
 /* Main animation */
 
 @keyframes show {
   0% {
     opacity: 0;
-    transform: translateY(20%);
+    filter: blur(2px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0%);
+    filter:blur(0px);
   }
 }
 
@@ -97,7 +87,7 @@ a:link, a:visited, a:hover, a:active {
   bottom: 0;
   background-color: #000000;
   margin-top: auto;
-  position: fixed;
+  position: sticky;
 }
 
 .footer-img {
@@ -153,7 +143,7 @@ a:link, a:visited, a:hover, a:active {
 
 .bounce {
   position: relative;
-  top: 10px;
+  top: 0px;
   display: inline-block;
   animation: bounce 2s infinite;
 
