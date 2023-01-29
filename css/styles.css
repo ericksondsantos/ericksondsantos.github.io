@@ -48,6 +48,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 #nav-about-tab[aria-selected="true"], #nav-education-tab:focus, #nav-experience-tab:focus {
+  font-weight: bold;
   filter: blur(0px);
 }
 
@@ -184,9 +185,13 @@ a:link, a:visited, a:hover, a:active {
 
 @media (max-width: 1028px) {
 
-  h1, h2, h3, h4, h5, h6 {
+  h2 {
     font-weight: bold;
     font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
   }
 
   .container {
@@ -198,12 +203,9 @@ a:link, a:visited, a:hover, a:active {
     text-align: center;
   }
 
-  .card-title {
-    font-size: 4rem;
-  }
-
-  .card-text {
-    font-size: 3rem;
+  #nav-tab {
+    font-weight: bold;
+    font-size: 2rem;
   }
 
   .footer-img {
