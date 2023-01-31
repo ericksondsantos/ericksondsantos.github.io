@@ -1,6 +1,6 @@
 body {
-  width: 50%;
-  margin: auto;
+  min-width:auto;
+  margin: 0 20%;
   background: linear-gradient(360deg, rgba(64, 66, 88, 1) 10%, rgba(0, 0, 0, 1) 100%);
   min-height: 100vh;
   font-family: 'Amatic SC', cursive;
@@ -129,6 +129,15 @@ body {
   position: relative;
 }
 
+.content-left:hover {
+  width: 50%;
+  padding: 1% 5%;
+  background-color: rgba(107, 114, 142, 0.5);
+  border-radius: 25px;
+  text-align: right;
+  position: relative;
+}
+
 .content-right {
   width: 50%;
   padding: 1% 5%;
@@ -181,15 +190,12 @@ body {
 
 @media (max-width: 1028px) {
   body {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .top-header {
-    font-size: 4rem;
-    text-align: center;
+    font-size: 3rem;
   }
-  #nav-tab {
-    font-weight: bold;
-  }
+
   .footer-img {
     color: #ffffff;
     padding: 3% 5%;
