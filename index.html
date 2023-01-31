@@ -24,8 +24,13 @@
 <body>
 
   <section id="top">
-    <div class="container">
+    <div class="top-container">
       <h1 class="top-header">c[<span class="bounce">.:</span>] ERICKSON SANTOS</h1>
+      <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about" type="button" role="tab" aria-controls="nav-about" aria-selected="true">About</button>
+        <button class="nav-link" id="nav-education-tab" data-bs-toggle="tab" data-bs-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="false">Education</button>
+        <button class="nav-link" id="nav-experience-tab" data-bs-toggle="tab" data-bs-target="#nav-experience" type="button" role="tab" aria-controls="nav-experience" aria-selected="false">Experience</button>
+      </div>
     </div>
     <div class="gradient">
       <div class="wave"></div>
@@ -36,58 +41,80 @@
   </section>
 
   <section id="main">
-    <div class="container">
-      <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about" type="button" role="tab" aria-controls="nav-about" aria-selected="true">About</button>
-          <button class="nav-link" id="nav-education-tab" data-bs-toggle="tab" data-bs-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="false">Education</button>
-          <button class="nav-link" id="nav-experience-tab" data-bs-toggle="tab" data-bs-target="#nav-experience" type="button" role="tab" aria-controls="nav-experience" aria-selected="false">Experience</button>
-        </div>
-      </nav>
+    <div class="main-container">
       <div class="tab-content "id="nav-tab-content">
         <div class="tab-pane fade show active p-3" id="nav-about" role="tabpanel" aria-labelledby="nav-home-tab">
           <img class="profile-img" src="images/eric.png" alt="">
-          <h2>I was born on April 8, 1983 in Taguig City. I am married to Krista Flores Quilala since 2004 with whom I have 3 wonderful kids - Reign, Iesu, and Henrik.</h2>
-          <h2>I am passionate about music and the arts, I can play multiple instruments like the sax, clarinet, guitar, bass, and keyboards.</h2>
-          <h2>I am a typical "jack of all trades", keeping myself relevant through multiple skills and discipline. I have an extensive experience in customer service and technical support with focus on networking technology.</h2>
-          <h2>I am also a programming and web enthusiast, dedicating a good chunk of my free time to learning Python, Perl, HTML, CSS, Javascript, and the likes.</h2>
+          <p>I was born on April 8, 1983 in Taguig City. I am married to Krista since 2004 with whom I have 3 wonderful kids - Reign, Iesu, and Henrik.</p>
+          <p>I am passionate about music and the arts, I can play multiple instruments like the sax, clarinet, guitar, bass, and keyboards.</p>
+          <p>I am a typical "jack of all trades", keeping myself relevant through multiple skills and discipline. I have an extensive experience in customer service and technical support with focus on networking technology.</p>
+          <p>I am also a programming and web enthusiast, dedicating a good chunk of my free time to learning Python, Perl, HTML, CSS, Javascript, and the likes.</p>
         </div>
         <div class="tab-pane fade p-3" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab">
-          <h2>Manuel S. Enverga University Foundation, Lucena City</h2>
-          <h3><li>Bachelor of Science in Information Technology, 2019</li></h3>          
-          <h2>Meralco Foundation Institute, Pasig City</h2>
-          <h3><li>Diploma in Information Technology, 2003</li></h3>
-          <h2>La Immaculada Concepcion School, Pasig City</h2>
-          <h3><li>Secondary Education, 2000</li></h3>
-          <h2>Ususan Elementary School, Taguig City</h2>
-          <h3><li>Primary Education, 1996</li></h3>
+          <div class="content-left">
+            <p>2020</p>
+            <p>Manuel S. Enverga University Foundation, Lucena City</p>
+            <p>Bachelor of Science in Information Technology (ETEEAP)</p>  
+          </div>
+          <div class="content-right">
+            <p>2003</p>
+            <p>Meralco Foundation Institute, Pasig City</p>
+            <p>Diploma in Information Technology (Vocational)</p>
+          </div>
+          <div class="content-left">
+            <p>2000</p>
+            <p>La Immaculada Concepcion School, Pasig City</p>
+            <p>Secondary Education</p>
+          </div>
+          <div class="content-right">
+            <p>1996</p>
+            <p>Ususan Elementary School, Taguig City</p>
+            <p>Primary Education</p>
+          </div>
         </div>
         <div class="tab-pane fade p-3" id="nav-experience" role="tabpanel" aria-labelledby="nav-experience-tab">
-          <h2>Optum Global Solutions, Muntinlupa City</h2>
-          <h3><li>Network Manager, 2017 to Present</li></h3>
-          <h2>Regus Business Solutions, Taguig City</h2>
-          <h3><li>Network Team Lead, 2012 to 2017</li></h3>
-          <h2>Fluor Daniel, Muntinlupa City</h2>
-          <h3><li>Quality Assurance Specialist, 2010 to 2012</li></h3>
-          <h2>Sykes Asia, Quezon City</h2>
-          <h3><li>Technical Support Lead, 2005 to 2010</li></h3>
-          <h2>West Contact Services, Makati City</h2>
-          <h3><li>Technical Support Analyst, 2004 to 2005</li></h3>
-          <h2>Web Philippines, Quezon City</h2>
-          <h3><li>Junior Web Developer, 2003 to 2004</li></h3>
+          <div class="content-left">
+            <p>2017 to Present</p>
+            <p>Optum, Muntinlupa City</p>
+            <p>Network Manager</p>
+          </div>
+          <div class="content-right">
+            <p>2012 to 2017</p>
+            <p>Regus, Taguig City</p>
+            <p>Network Team Lead</p>
+          </div>
+          <div class="content-left">
+            <p>2010 to 2012</p>
+            <p>Fluor Daniel, Muntinlupa City</p>
+            <p>Quality Assurance Specialist</p>
+          </div>
+          <div class="content-right">
+            <p>2005 to 2010</p>
+            <p>Sykes Asia, Quezon City</p>
+            <p>Technical Support Lead</p>
+          </div>
+          <div class="content-left">
+            <p>2004 to 2005</p>
+            <p>West Contact Services, Makati City</p>
+            <p>Technical Support Analyst</p>
+          </div>
+          <div class="content-right">
+            <p>2003 to 2004</p>
+            <p>Web Philippines, Quezon City</p>
+            <p>Junior Web Developer</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer id="footer">
-    <div class="container">
+  <section id="footer">
+    <div class="footer-container">
       <a href="https://www.facebook.com/xlycan" target="_blank"><i class="fa-brands fa-facebook footer-img"></i></a>
       <a href="https://www.linkedin.com/in/ericksondsantos/" target="_blank"><i class="fa-brands fa-linkedin footer-img"></i></a>
       <a href="mailto:ericksondsantos@gmail.com" target="_blank"><i class="fa-solid fa-envelope footer-img"></i></a>
-      <p class="copyright">© Erickson Santos 2022</p>
     </div>
-  </footer>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

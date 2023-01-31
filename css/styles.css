@@ -1,116 +1,29 @@
 body {
+  width: 50%;
   margin: auto;
-  overflow-x: hidden;
   background: linear-gradient(360deg, rgba(64, 66, 88, 1) 10%, rgba(0, 0, 0, 1) 100%);
-  background-attachment: fixed;
-  text-align: center;
-  font-family: 'Amatic SC', cursive;
-  font-size: 1.8rem;
-  color: #ffffff;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-
-a:link, a:visited, a:hover, a:active {
-  text-decoration: none;
-  color: inherit;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5rem;
+  color: #ffffff;
 }
 
 /* Top */
 
 #top {
+  padding: 2% 0;
   z-index: 1;
-  position: sticky;
 }
 
-.container {
-  padding: 2% 4%;
-}
-
-.top-header {
-  text-align: left;
+.top-container {
+  text-align: center;
   color: #ffffff;
+  text-shadow: 2px 4px #000000;
 }
 
-/* Main */
-
-#main {
-  z-index: 0;
-}
-
-#nav-about-tab, #nav-education-tab, #nav-experience-tab {
-  filter: blur(2px);
-}
-
-#nav-about-tab[aria-selected="true"], #nav-education-tab:focus, #nav-experience-tab:focus {
-  font-weight: bold;
-  filter: blur(0px);
-}
-
-#nav-tab-content {
-  padding: 3% 0;
-  text-align: left;
-}
-
-#nav-about, #nav-education, #nav-experience {
-  animation: 3s show;
-}
-
-.profile-img {
-  float: left;
-  border-radius: 25px;
-  width: 150px;
-  margin: 10px 20px 0 0;
-}
-
-/* Main animation */
-
-@keyframes show {
-  0% {
-    opacity: 0;
-    filter: blur(2px);
-  }
-  100% {
-    opacity: 1;
-    filter:blur(0px);
-  }
-}
-
-/* Footer */
-
-#footer {
-  width: 100%;
-  bottom: 0;
-  background-color: #000000;
-  margin-top: auto;
-  position: sticky;
-}
-
-.footer-img {
-  color: #ffffff;
-  padding: 3% 5%;
-  font-size: 2rem;
-}
-
-.footer-img:hover {
-  opacity: .5;
-}
-
-.copyright {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  color: #ffffff;
-}
-
-/* Background Animation */
+/* Top Animation */
 
 .wave {
-  /* background: rgba(64, 0, 64, 0.5); */
   background: rgba(107, 114, 142, 0.5);
   border-radius: 0 0 1000% 1000%;
   position: fixed;
@@ -147,7 +60,6 @@ a:link, a:visited, a:hover, a:active {
   top: 0px;
   display: inline-block;
   animation: bounce 2s infinite;
-
 }
 
 @keyframes bounce {
@@ -163,55 +75,123 @@ a:link, a:visited, a:hover, a:active {
   2% {
     transform: translateX(1);
   }
-
   25% {
     transform: translateX(-25%);
   }
-
   50% {
     transform: translateX(-50%);
   }
-
   75% {
     transform: translateX(-25%);
   }
-
   100% {
     transform: translateX(1);
   }
 }
 
+/* Main */
+
+#main {
+  
+}
+
+#nav-about-tab, #nav-education-tab, #nav-experience-tab {
+  filter: blur(2px);
+}
+
+#nav-about-tab[aria-selected="true"], #nav-education-tab:focus, #nav-experience-tab:focus {
+  font-weight: bold;
+  filter: blur(0px);
+}
+
+#nav-tab-content {
+  padding: 3% 0;
+  text-align: left;
+}
+
+#nav-about, #nav-education, #nav-experience {
+  animation: 3s show;
+}
+
+.profile-img {
+  float: left;
+  border-radius: 25px;
+  width: 150px;
+  margin: 10px 20px 0 0;
+}
+
+.content-left {
+  width: 50%;
+  padding: 1% 5%;
+  background-color: rgba(107, 114, 142, 0.5);
+  border-radius: 25px;
+  text-align: right;
+  position: relative;
+}
+
+.content-right {
+  width: 50%;
+  padding: 1% 5%;
+  background-color: rgba(107, 114, 142, 0.5);
+  border-radius: 25px;
+  text-align: left;
+  left: 50%;
+  position: relative;
+}
+
+/* Main animation */
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    filter:blur(0px);
+  }
+}
+
+/* Footer */
+
+#footer {
+  
+}
+
+.footer-container {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background: #000000;
+  position: fixed;
+  z-index: 1;
+}
+
+.footer-img {
+  color: #ffffff;
+  padding: 1% 2%;
+}
+
+.footer-img:hover {
+  opacity: .5;
+}
+
 /* Screen Size Response */
 
 @media (max-width: 1028px) {
-
-  h2 {
-    font-weight: bold;
-    font-size: 3rem;
+  body {
+    font-size: 2rem;
   }
-
-  h3 {
-    font-size: 2.5rem;
-  }
-
-  .container {
-    padding: 3% 10%;
-  }
-
   .top-header {
     font-size: 4rem;
     text-align: center;
   }
-
   #nav-tab {
     font-weight: bold;
-    font-size: 2rem;
   }
-
   .footer-img {
     color: #ffffff;
     padding: 3% 5%;
-    font-size: 4rem;
   }
-
 }
