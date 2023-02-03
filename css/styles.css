@@ -1,37 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 body {
-  margin: 0 20%;
   background: linear-gradient(360deg, rgba(64, 66, 88, 1) 10%, rgba(0, 0, 0, 1) 100%);
   background-attachment: fixed;
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
-  font-size: 21px;
-  color: #FFFFFF;
-  overflow: none;
+  color: #ffffff;
 }
 
 /* Top */
 
-#top {
-  padding: 5% 0 0 0;
-  z-index: 1;
-}
-
 .top-container {
-  text-align: right;
-  color: #ffffff;
-  text-shadow: 2px 4px #000000;
+  text-align: center;
+  font-size: 25vw;
+  /* text-shadow: 2px 4px #000000; */
 }
 
-/* Top Animation */
+.bounce {
+  position: relative;
+  top: -10px;
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
 
 .wave {
   background: rgba(107, 114, 142, 0.5);
   border-radius: 0 0 1000% 1000%;
   position: fixed;
   width: 300%;
-  height: 5em;
+  height: 25em;
   animation: wave 10s -3s linear infinite;
   transform: translate3d(0, 0, 0);
   opacity: 0.8;
@@ -41,19 +36,19 @@ body {
 }
 
 .wave:nth-of-type(2) {
-  top: -1.25em;
+  top: -1em;
   animation: wave 18s linear reverse infinite;
   opacity: 0.8;
 }
 
 .wave:nth-of-type(3) {
-  top: -2.5em;
+  top: -3em;
   animation: wave 20s -1s reverse infinite;
   opacity: 0.9;
 }
 
 .wave:nth-of-type(4) {
-  top: -2.5em;
+  top: -4em;
   animation: wave 50s -1s reverse infinite;
   opacity: 0.5;
 }
@@ -74,13 +69,6 @@ body {
   100% {
     transform: translateX(1);
   }
-}
-
-.bounce {
-  position: relative;
-  top: 5px;
-  display: inline-block;
-  animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
