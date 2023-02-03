@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=JetBrains+Mono&display=swap');
 
 *{
   margin: 0;
@@ -17,27 +17,12 @@ body {
 
 .top-kumusta {
   left: 60%;
-  font-size: 2em;
+  font-family: "JetBrains", monospace;
+  font-size: 1.5em;
   font-weight: bold;
   transform: rotate(320deg);
   position: absolute;
-  color: orange;
-  animation: sway 3s infinite;
-}
-
-@keyframes sway {
-  0% {
-    opacity: 0;
-    filter: blur(5px);
-  }
-  50% {
-    opacity: 1;
-    filter: blur(0px)
-  }
-  100% {
-    opacity: 0;
-    filter: blur(5px);
-  }
+  color: #FF8E00;
 }
 
 .top-logo {
@@ -224,7 +209,7 @@ section .text-container .text-box h3 {
 
   .top-kumusta {
     left: 60%;
-    font-size: 5vw;
+    font-size: 3vw;
     transform: rotate(320deg);
     position: absolute; 
   }
