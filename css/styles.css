@@ -220,7 +220,7 @@ section .text-container .text-box h3 {
   opacity: 1;
 }
 
-@media (max-width: 900px){
+@media screen and (min-width: 340px) and (max-width: 1024px) {
 
   .top-kumusta {
     left: 60%;
