@@ -1,24 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+
 body {
   background: linear-gradient(360deg, rgba(64, 66, 88, 1) 10%, rgba(0, 0, 0, 1) 100%);
   background-attachment: fixed;
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
-  color: #ffffff;
+  background: #42455a;
+  /* overflow: hidden; */
 }
 
-/* Top */
-
-.top-container {
+.top-header {
   text-align: center;
-  font-size: 25vw;
-  /* text-shadow: 2px 4px #000000; */
+  font-size: 25em;
 }
 
 .bounce {
   position: relative;
-  top: -10px;
+  top: -150px;
   display: inline-block;
   animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0)
+  }
+  50% {
+    transform: translateY(50px)
+  }
 }
 
 .wave {
@@ -71,72 +86,62 @@ body {
   }
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(0)
-  }
-  50% {
-    transform: translateY(-10px)
-  }
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Main */
+section:nth-child(1){
+  color: #e0ffff;
+  }
 
-#main {
-  
+section:nth-child(2){
+  color: #42455a;
+  background: #e0ffff;
+} 
+
+section:nth-child(3){
+  color: #e0ffff;
 }
 
-.tabbed {
+section:nth-child(4){
+  color: #42455a;
+  background: #e0ffff;
+}
+
+section .container {
+  margin: 100px;
+}
+
+section h1 {
+  font-size: 3rem;
+  margin: 20px;
+}
+
+section h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container {
+  text-align: center;
+  display: flex;
+}
+
+section .text-container .text-box {
   width: 100%;
-  margin: 50px auto;
+  margin: 20px;
+  padding: 20px;
+  background: #00c2cb;
 }
 
-.tabbed > label {
-  display: block;
-  float: left;
-  padding: 12px 20px;
-  margin-right: 5px;
-  cursor: pointer;
-  filter: blur(2px);
-}
-
-.tabbed > label:hover,
-.tabbed > input:checked + label {
-  background: rgba(107, 114, 142, 0.5);
-  border-radius: 25px 25px 0 0;
-  filter: blur(0px);
-  text-shadow: 2px 4px #000000;
-}
-
-.tabs > div {
-  width: 60%;
-  max-height: 60%;
-  border: 2px solid rgba(107, 114, 142, 0.5);
-  border-radius: 0 25px 25px 25px;
-  padding: 25px;
-  opacity: 0;
-  transition: opacity 1s, transform 3s;
-  z-index: 0;
-  position: absolute;
-  overflow: auto;
-}
-
-#tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
-#tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
-#tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
-#tab-nav-4:checked ~ .tabs > div:nth-of-type(4) {
-  /* transform: rotateX(0); */
-  opacity: 1;
-  filter: blur(0px);
-  z-index: 1;
-}
-
-.tabbed > input {
-  display: none;
-}
-
-.tabs {
-  clear: both;
+section .text-container .text-box h3 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .profile-img {
@@ -165,18 +170,6 @@ body {
   position: relative;
 }
 
-/* Footer */
-
-.footer-container {
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  background: #000000;
-  position: fixed;
-  z-index: 1;
-}
-
 .footer-img {
   color: #ffffff;
   padding: 1% 2%;
@@ -186,18 +179,48 @@ body {
   opacity: .5;
 }
 
-/* Screen Size Response */
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  filter: blur(1rem);
+  transition: 1s all ease;
+}
 
-@media (max-width: 1028px) {
-  body {
-    font-size: 2rem;
+.reveal.active {
+  transform: translateY(0);
+  filter: blur(0);
+  opacity: 1;
+}
+
+@media (max-width: 900px){
+  .top-header {
+    text-align: center;
+    font-size: 50vw;
   }
 
-  .tabs > div {
-    max-height: 80%;
+  .bounce {
+    position: relative;
+    top: -100px;
+    display: inline-block;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0)
+    }
+    50% {
+      transform: translateY(50px)
+    }
+  }
 
-  .footer-img {
-    color: #ffffff;
-    padding: 3% 5%;
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  section .text-container{
+    flex-direction: column;
   }
 }
