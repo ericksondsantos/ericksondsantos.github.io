@@ -11,8 +11,6 @@ body {
   background: linear-gradient(360deg, rgba(64, 66, 88, 1) 10%, rgba(0, 0, 0, 1) 100%);
   background-attachment: fixed;
   min-height: 100vh;
-  background: #42455a;
-  /* overflow: hidden; */
 }
 
 .top-kumusta {
@@ -109,7 +107,7 @@ section:nth-child(1){
 
 section:nth-child(2){
   color: #42455a;
-  background: #e0ffff;
+  background: rgba(224, 255, 255, 0.8);
 } 
 
 section:nth-child(3){
@@ -118,7 +116,11 @@ section:nth-child(3){
 
 section:nth-child(4){
   color: #42455a;
-  background: #e0ffff;
+  background: rgba(224, 255, 255, 0.8);
+}
+
+section:nth-child(5){
+  color: #e0ffff;
 }
 
 section .container {
