@@ -236,7 +236,7 @@ section .text-container .text-box h3 {
 
   .bounce {
     position: relative;
-    top: -120px;
+    top: -130px;
     display: inline-block;
     animation: bounce 2s infinite;
   }
