@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
 }
 
-.top-kumusta {
+.top-hello {
   left: 60%;
   font-family: "JetBrains", monospace;
   font-size: 1.5em;
@@ -137,6 +137,7 @@ section h2 {
   text-align: center;
   text-transform: uppercase;
 }
+
 section .text-container {
   text-align: center;
   display: flex;
@@ -148,7 +149,7 @@ section .text-container .text-box {
   margin: 20px;
   padding: 20px;
   border-radius: 25px;
-  background: #00c2cb;
+  background: rgba(230, 221, 196, 0.5);
 }
 
 section .text-container .text-box h3 {
@@ -156,32 +157,6 @@ section .text-container .text-box h3 {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
-}
-
-.profile-img {
-  float: left;
-  border-radius: 100px;
-  width: 150px;
-  margin: 10px 20px 0 0;
-}
-
-.content-left {
-  width: 50%;
-  padding: 1% 5%;
-  background-color: rgba(107, 114, 142, 0.5);
-  border-radius: 25px 0 0 25px;
-  text-align: right;
-  position: relative;
-}
-
-.content-right {
-  width: 50%;
-  padding: 1% 5%;
-  background-color: rgba(107, 114, 142, 0.5);
-  border-radius: 0 25px 25px 0;
-  text-align: left;
-  left: 50%;
-  position: relative;
 }
 
 .footer-img {
@@ -209,7 +184,7 @@ section .text-container .text-box h3 {
 
 @media screen and (min-width: 340px) and (max-width: 1024px) {
 
-  .top-kumusta {
+  .top-hello {
     left: 60%;
     font-size: 3vw;
     transform: rotate(320deg);
@@ -235,6 +210,10 @@ section .text-container .text-box h3 {
     50% {
       transform: translateY(30px)
     }
+  }
+
+  .wave {
+    height: 40rem;
   }
 
   section h2{
