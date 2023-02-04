@@ -127,15 +127,11 @@ section .container {
   margin: 100px;
 }
 
-section h1 {
-  font-size: 3rem;
-  margin: 20px;
-}
-
 section h2 {
+  font-family: "JetBrains", monospace;
   font-size: 40px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 section .text-container {
@@ -145,21 +141,16 @@ section .text-container {
 }
 
 section .text-container .text-box {
+  font-size: 21px;
   width: 100%;
   margin: 20px;
   padding: 20px;
   border-radius: 25px;
-  background: rgba(230, 221, 196, 0.5);
-}
-
-section .text-container .text-box h3 {
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+  background: rgba(3, 201, 136, 0.5);
 }
 
 .footer-img {
+  font-size: 2em;
   color: #ffffff;
   padding: 1% 2%;
 }
