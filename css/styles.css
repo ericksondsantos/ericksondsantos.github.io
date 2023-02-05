@@ -101,21 +101,21 @@ section {
   align-items: center;
 }
 
-section:nth-child(1){
+section:nth-child(2){
   color: #42455a;
   background: rgba(224, 255, 255, 0.8);
-} 
-
-section:nth-child(2){
-  color: #e0ffff;
 }
 
 section:nth-child(3){
+  color: #e0ffff;
+}
+
+section:nth-child(4){
   color: #42455a;
   background: rgba(224, 255, 255, 0.8);
 }
 
-section:nth-child(4){
+section:nth-child(5){
   color: #e0ffff;
 }
 
@@ -204,8 +204,10 @@ section .text-container .text-box {
   }
 
   section h2{
+    font-family: "JetBrains", monospace;
     font-size: 2.5rem;
     text-align: center;
+    text-transform: lowercase;
   }
 
   section .text-container{
