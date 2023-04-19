@@ -86,3 +86,11 @@ document.querySelector("a").getAttribute("href");
 document.querySelector("a").setAttribute("href", "https://www.bing.com);
     Changes the href from https://www.google.com to https://www.google.com
 
+document.querySelector(".w").classList;
+    ['w', 'drum', value: 'w drum']
+document.querySelector(".w").classList.add("pressed");
+    Adds 'pressed' to the class
+document.querySelector(".w").classList;
+    ['w', 'drum', 'pressed', value: 'w drum pressed']
+document.querySelector(".w").classList.remove("pressed");
+    Removes 'pressed' from the class
