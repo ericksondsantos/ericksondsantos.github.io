@@ -9,11 +9,11 @@ var houseKeeper1 = {
 /* Constructor Function */
 /* construction function should be name with the first letter capitalized */
 
-function HouseKeeper(yearsOfExperience, name, cleaningRepertoire){
+function HouseKeeper(yearsOfExperience, name, cleaningRepertoire) {
     this.yearsOfExperience = yearsOfExperience;
     this.name = name;
     this.cleaningRepertoire = cleaningRepertoire
-    this.clean = function(){
+    this.clean = function() {
         alert("Cleaning in progress.");
     }
 }
