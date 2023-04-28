@@ -10,6 +10,12 @@ $(document).keydown(function() {
     }
 });
 
+$(document).click(function() {
+    if(started === false){
+        nextSequence();
+    }
+});
+
 function nextSequence() {
     started = true;
     $("#level-title").text("Level: " + level);
