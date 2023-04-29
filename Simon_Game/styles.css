@@ -27,6 +27,7 @@ body {
   grid-template-columns: auto auto;
   height: 500px;
   width: 500px;
+  margin-top: 5%;
 }
 
 .btn {
