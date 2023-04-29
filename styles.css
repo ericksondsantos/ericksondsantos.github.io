@@ -16,6 +16,7 @@ body {
 
 .top-hello {
   font-family: "JetBrains", monospace;
+  font-size: 3rem;
   font-weight: bold;
   transform: rotate(320deg);
   color: #FF8E00;
@@ -139,10 +140,4 @@ section .text-container .text-box {
   100% {
     transform: translateX(1);
   }
-}
-
-@media screen and (min-width: 340px) and (max-width: 1024px) {
-
-
-
 }
