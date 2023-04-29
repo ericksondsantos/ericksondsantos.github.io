@@ -211,6 +211,6 @@ section .text-container .text-box {
   }
 
   section .text-container{
-    font-size: 3rem;
+    font-size: 12px;
   }
 }
