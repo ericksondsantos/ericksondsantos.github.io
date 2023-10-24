@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=JetBrains+Mono&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(360deg, rgba(64, 66, 88, 1) 10%, rgba(0, 0, 0, 1) 100%);
+  background-attachment: fixed;
+}
+
+#level-title {
+  font-family: "JetBrains", monospace;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #FF8E00;
+  margin: 5%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 500px;
+  width: 500px;
+  margin-top: 5%;
+}
+
+.btn {
+  text-align: center;
+  margin: 5px;
+  border: 10px solid black;
+  border-radius: 25%;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.wave {
+  background: rgba(107, 114, 142, 0.5);
+  border-radius: 0 0 1000% 1000%;
+  position: fixed;
+  width: 300%;
+  height: 25em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  top: -1em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  top: -3em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+.wave:nth-of-type(4) {
+  top: -4em;
+  animation: wave 50s -1s reverse infinite;
+  opacity: 0.5;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(1);
+  }
+}
