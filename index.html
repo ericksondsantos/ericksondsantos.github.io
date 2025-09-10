@@ -1,18 +1,20 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Configurator 2.0a</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Configurator</title>
+  </head>
 
-<body>
-  <h1>Site Code:</h1><input type="text" name="site_code">
-  <h1>Site Model:</h1><input type="text" name="site_model">
-  <footer>
-    <p>© Erickson Santos. All rights reserved.</p>
-  </footer>
-</body>
+  <body>
+    <form method="POST">
+      <label for="site_code">Site Code:</label><br>
+      <input type="text" id="site_code" name="site_code" required><br><br>
+      <label for="site_model">Site Model:</label><br>
+      <input type="text" id="site_model" name="site_model" required><br><br>
+      <button type="submit">Run</button>
+    </form>
+  </body>
 
 </html>
