@@ -1,7 +1,6 @@
 body {
   background: linear-gradient(360deg, rgba(64, 66, 88, 1) 10%, rgba(0, 0, 0, 1) 100%);
   background-attachment: fixed;
-  min-height: 100vh;
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
 }
@@ -11,12 +10,11 @@ body {
 .top-container {
   text-align: center;
   font-size: 25vw;
-  /* text-shadow: 2px 4px #000000; */
 }
 
 .bounce {
   position: relative;
-  top: -10px;
+  top: -25px;
   display: inline-block;
   animation: bounce 2s infinite;
 }
@@ -25,7 +23,7 @@ body {
   background: rgba(107, 114, 142, 0.5);
   border-radius: 0 0 1000% 1000%;
   position: fixed;
-  width: 300%;
+  width: 250%;
   height: 25em;
   animation: wave 10s -3s linear infinite;
   transform: translate3d(0, 0, 0);
@@ -88,14 +86,14 @@ body {
 
 .tabbed {
   width: 100%;
-  margin: 50px auto;
+  /*margin: 50px auto;*/
 }
 
 .tabbed > label {
   display: block;
   float: left;
   padding: 12px 20px;
-  margin-right: 5px;
+  /*margin-right: 5px;*/
   cursor: pointer;
   filter: blur(2px);
 }
@@ -173,13 +171,14 @@ body {
   left: 0;
   text-align: center;
   background: #000000;
+  opacity: .75;
   position: fixed;
   z-index: 1;
 }
 
 .footer-img {
   color: #ffffff;
-  padding: 1% 2%;
+  padding: 5% 5%;
 }
 
 .footer-img:hover {
