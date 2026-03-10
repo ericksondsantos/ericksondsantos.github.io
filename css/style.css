@@ -1,11 +1,41 @@
+html {
+  background-color: #F4F4F4;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 p {
-  color: red
+  color: red;
+  font-size: 1rem;
 }
 
 #job_title {
-  color: blue
+  color: blue;
+  font-size: 1rem;
 }
 
 .subtitle {
-  color: green
+  color: green;
+  font-size: 1rem;
+}
+
+ul {
+  font-size: 1rem;  
+}
+
+#summary {
+  background-color: cadetblue;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 2vi;
+  margin-right: 50%;
+}
+
+#professional_experience {
+  background-color: gold;
+  padding: 20px;
+  border: 2px dashed black;
+  border-radius: 2vi;
+  margin-left: 50%;
 }
