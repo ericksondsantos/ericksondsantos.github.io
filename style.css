@@ -3,28 +3,28 @@ html {
   font-family: "Encode Sans Condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #F4f4f2;
 }
 
 body {
   margin: 10%;
-
-}
-
-p, h2,  h3, ul {
-  color: #F4f4f2;
-}
-
-#name {
-  color: #F4F4F2;
-}
-
-#header, #summary, #professional_experience, #education, #technical_skills, #soft_skills {
-  background-color: #495464;
-  padding: 20px;
-  border-radius: 1vi;
-  margin: 2%;
 }
 
 #header {
   text-align: center;
+}
+
+.reveal {
+  background-color: #495464;
+  padding: 20px;
+  border-radius: 1vi;
+  margin: 2%;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 2s;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(50px);
 }
