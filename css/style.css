@@ -1,19 +1,32 @@
 html {
-  background-color: #F1F0E8;
+  background-color: #BBBFCA;
   font-family: "Encode Sans Condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+body {
+  margin: 10%;
+
+}
+
 p, ul, .subtitle, .job_title {
+  color: #F4F4F2;
   font-size: 1rem;
 }
 
+#name {
+  color: #F4F4F2;
+}
+
 #header, #summary, #professional_experience, #education, #technical_skills, #soft_skills {
-  background-color: #B3C8CF;
+  background-color: #495464;
   padding: 20px;
-  border: 2px solid #89A8B2;
+  border: 2px solid #F4F4F2;
   border-radius: 1vi;
-  margin-top: 2%;
-  margin-right: 20%;
+  margin: 2%;
+}
+
+#header {
+  text-align: center;
 }
