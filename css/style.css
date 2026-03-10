@@ -10,9 +10,8 @@ body {
 
 }
 
-p, ul, .subtitle, .job_title {
-  color: #F4F4F2;
-  font-size: 1rem;
+p, h2,  h3, ul {
+  color: #F4f4f2;
 }
 
 #name {
@@ -22,7 +21,6 @@ p, ul, .subtitle, .job_title {
 #header, #summary, #professional_experience, #education, #technical_skills, #soft_skills {
   background-color: #495464;
   padding: 20px;
-  border: 2px solid #F4F4F2;
   border-radius: 1vi;
   margin: 2%;
 }
