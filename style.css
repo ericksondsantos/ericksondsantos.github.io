@@ -21,10 +21,11 @@ body {
   margin: 2%;
   opacity: 0;
   transform: translateY(50px);
-  transition: all 2s;
+  transition: all 1s ease-in;
 }
 
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(50px);
+  transition: all 1s ease-in;
 }
