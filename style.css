@@ -10,7 +10,6 @@ body {
   overflow-y: hidden;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
 }
 
 .reveal {
@@ -25,12 +24,14 @@ body {
   opacity: 0;
   transform: translatex(0%);
   transition: all 2s ease-in;
+  scroll-snap-align: center;
 }
 
 .reveal.is-visible {
   opacity: 1;
   transform: translatex(0%);
   transition: all 2s ease-in;
+  scroll-snap-align: center;
 }
 
 ul, h1, h2, h3, p {
