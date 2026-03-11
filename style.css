@@ -1,24 +1,28 @@
-html {
-  background-color: #BBBFCA;
-  font-family: "Encode Sans Condensed", sans-serif;
+body {
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   font-style: normal;
+  background-color: #BBBFCA;
   color: #F4f4f2;
-}
-
-body {
-  margin: 10%;
-}
-
-#header {
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 .reveal {
   background-color: #495464;
-  padding: 20px;
-  border-radius: 1vi;
-  margin: 2%;
+  padding-inline: 50px;
+  flex: 0 0 100vw; 
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
   transform: translateY(50px);
   transition: all 1s ease-in;
