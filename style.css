@@ -1,23 +1,19 @@
 body {
   font-family: "Roboto Slab", serif;
   font-weight: 400;
-  font-size: clamp(.5rem, 1vw + .5rem, 1.25rem);
   font-style: normal;
+  font-size: clamp(1rem, 5vw + 1rem, 1.5rem);
   background-color: #BBBFCA;
   color: #F4f4f2;
   margin: 0;
   padding: 0;
   display: flex;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow-y: auto;
+  overflow-x: auto;
   scroll-snap-type: x mandatory;
 }
 
-ul,
-h1,
-h2,
-h3,
-p {
+ul, h3, p {
   text-align: justify;
   max-width: 70%;
 }
