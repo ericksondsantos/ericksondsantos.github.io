@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto Slab", serif;
   font-weight: 400;
+  font-size: clamp(.5rem, 1vw + .5rem, 1.25rem);
   font-style: normal;
   background-color: #BBBFCA;
   color: #F4f4f2;
