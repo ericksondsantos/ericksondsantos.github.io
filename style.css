@@ -35,5 +35,6 @@ body {
 }
 
 ul, h1, h2, h3, p {
+  text-align: justify;
   max-width: 70%;
 }
