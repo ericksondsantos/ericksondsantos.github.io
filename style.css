@@ -15,7 +15,6 @@ body {
 
 .reveal {
   background-color: #495464;
-  padding-inline: 50px;
   flex: 0 0 100vw; 
   height: 100vh;
   scroll-snap-align: start;
@@ -32,4 +31,8 @@ body {
   opacity: 1;
   transform: translateY(50px);
   transition: all 1s ease-in;
+}
+
+ul, h1, h2, h3, p {
+  max-width: 70%;
 }
