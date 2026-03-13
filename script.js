@@ -1,7 +1,7 @@
-const wrapper = document.querySelector('.slider-wrapper');
-const leftZone = document.querySelector('.left-zone');
-const rightZone = document.querySelector('.right-zone');
-const slides = document.querySelectorAll('.slide');
+const wrapper = document.querySelector('.page');
+const leftZone = document.querySelector('.left');
+const rightZone = document.querySelector('.right');
+const slides = document.querySelectorAll('.container');
 
 const scrollAmount = window.innerWidth;
 
