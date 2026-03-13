@@ -47,7 +47,7 @@ ul, h3, p {
 }
 
 .zone {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   width: 50%;
