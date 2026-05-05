@@ -2,10 +2,6 @@ div {
   padding: 50px;
 }
 
-p {
-  text-align: justify;
-}
-
 .gradient-background {
   background: linear-gradient(0deg, #FFFFFF, #547792, #213448);
 }
