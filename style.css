@@ -1,23 +1,13 @@
+div {
+  padding: 50px;
+}
+
+p {
+  text-align: justify;
+}
+
 .gradient-background {
-  background: linear-gradient(180deg, #213448, #547792, #94B4C1, #FFFFFF);
-}
-
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.icon-square {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.75rem;
+  background: linear-gradient(0deg, #FFFFFF, #547792, #213448);
 }
 
 .tile-image {
