@@ -1,9 +1,12 @@
-div {
-  padding: 50px;
+body {
+  background: linear-gradient(190deg, #EAE0CF, #94B4C1, #547792, #213448);
+  background-attachment: fixed;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-.gradient-background {
-  background: linear-gradient(0deg, #FFFFFF, #547792, #213448);
+div {
+  padding: 50px;
 }
 
 .tile-image {
