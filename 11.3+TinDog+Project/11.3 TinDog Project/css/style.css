@@ -1,5 +1,7 @@
 .gradient-background {
-  background: linear-gradient(180deg, #213448, #547792, #94B4C1, #FFFFFF);
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
 }
 
 @keyframes gradient-animation {
@@ -20,7 +22,7 @@
   border-radius: 0.75rem;
 }
 
-.tile-image {
-  border-radius: 15%;
+.profile-img {
+  border-radius: 50%;
   height: 100px;
 }
