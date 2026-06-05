@@ -1,7 +1,11 @@
 body {
-  background: linear-gradient(190deg, #EAE0CF, #94B4C1, #547792, #213448);
+  background: linear-gradient(190deg, #EAE0CF, #94B4C1, #547792);
   background-attachment: fixed;
-  padding: 10%;
+}
+
+footer {
+  text-align: center;
+  color: white;
 }
 
 div {
