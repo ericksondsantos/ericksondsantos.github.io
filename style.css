@@ -8,7 +8,7 @@ html, body {
 .tile-image {
   border-radius: 15px;
   max-height: 100%;
-  max-width: 100%;
+  max-width: 50%;
 }
 
 .card {
@@ -25,4 +25,17 @@ html, body {
   background-color: rgba(255, 255, 255, 0.25);
   text-align: center;
   width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  border-radius: 25px;
+  margin: 2%;
+  padding: 2%;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.item {
+  text-align: center;
+  padding: 2%;
 }
