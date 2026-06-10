@@ -9,17 +9,14 @@ footer {
   color: white;
 }
 
-div {
-  padding: 10px;
-}
-
 .tile-image {
-  border-radius: 15%;
-  height: 100px;
+  border-radius: 25px;
+  height: 200px;
 }
 
 .card {
-  border-color: black;
-  border-width: 2px;
+  border-radius: 25px;
   margin: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
 }
