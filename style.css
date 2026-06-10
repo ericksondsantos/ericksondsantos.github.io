@@ -1,6 +1,7 @@
 body {
   background: linear-gradient(190deg, #EAE0CF, #94B4C1, #547792);
   background-attachment: fixed;
+  padding: 50px;
 }
 
 footer {
@@ -15,4 +16,10 @@ div {
 .tile-image {
   border-radius: 15%;
   height: 100px;
+}
+
+.card {
+  border-color: black;
+  border-width: 2px;
+  margin: 20px;
 }
