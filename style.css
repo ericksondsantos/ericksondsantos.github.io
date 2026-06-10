@@ -1,9 +1,8 @@
 html, body {
+  font-family: "Quicksand", sans-serif;
   background: linear-gradient(190deg, #EAE0CF, #94B4C1, #547792);
   background-attachment: fixed;
   padding: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .tile-image {
