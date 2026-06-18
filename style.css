@@ -38,7 +38,13 @@ html, body {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
-.item {
+.item{
   text-align: center;
+  padding: 2%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
   padding: 2%;
 }
