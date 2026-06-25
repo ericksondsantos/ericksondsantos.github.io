@@ -1,8 +1,11 @@
 html, body {
+  display: flex;
+  flex-direction: column;
   font-family: "IBM Plex Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "width" 100;
+  font-size: 1rem;
   background: linear-gradient(190deg, #EAE0CF, #94B4C1, #547792);
   background-attachment: fixed;
 }
@@ -22,6 +25,7 @@ html, body {
   width: 100%;
   padding: 2rem 0;
   background-color: rgba(255, 255, 255, 0.5);
+  flex-shrink: 0;
 }
 
 .grid-container, .game-container, .stats {
