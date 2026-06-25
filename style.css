@@ -1,7 +1,7 @@
 html, body {
   display: flex;
   flex-direction: column;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Roboto", "Lilita One", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "width" 100;
@@ -110,11 +110,11 @@ input::-webkit-inner-spin-button {
 }
 
 .submit-btn {
-  background-color: #48bb78;
+  background-color: #4274D9;
 }
 
 .submit-btn:hover { 
-  background-color: #38a169; 
+  background-color: #153981; 
 }
 
 .randomize-btn {
@@ -146,7 +146,7 @@ input::-webkit-inner-spin-button {
 }
 
 .correct { 
-  color: #48bb78; 
+  color: #ffffff; 
 }
 .incorrect { 
   color: #e53e3e; 
@@ -158,4 +158,5 @@ input::-webkit-inner-spin-button {
   padding: 2rem 0;
   background-color: rgba(255, 255, 255, 0.5);
   flex-shrink: 0;
+  font-family: "Roboto", sans-serif;
 }
