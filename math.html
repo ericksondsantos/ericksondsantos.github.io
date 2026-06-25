@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick Math! Challenge</title>
+    <title>Math Game</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -12,28 +12,22 @@
 </head>
 <body>
     <div class="game-container">
-        <h1>Quick Math!</h1>
-        
         <div class="stats-container">
-            <div class="stat-box">Score: <span id="score" class="score">0</span></div>
-            <div class="stat-box">Streak: <span id="streak" class="streak">0</span></div>
+            <div class="stats">Score <span id="score" class="score">0</span></div>
+            <div class="stats">Streak <span id="streak" class="streak">0</span></div>
         </div>
-
-        <div class="equation-display" id="equation">---</div>
-
+        <div class="equation" id="equation">---</div>
         <form id="game-form" onsubmit="checkAnswer(event)">
             <div class="input-section">
-                <input type="number" id="user-answer" placeholder="?" required autocomplete="off">
-                <button type="submit" class="submit-btn">Go</button>
+                <input type="number" id="user-answer" placeholder="Answer" required autocomplete="off">
             </div>
+            <button type="submit" class="submit-btn">Go</button>
+            <button class="randomize-btn" id="next-btn" onclick="generateEquation()">Randomize</button>
+            <div class="feedback" id="feedback"></div>
         </form>
-
-        <button class="action-btn" id="next-btn" onclick="generateEquation()">Randomize / Next Question</button>
-
-        <div class="feedback" id="feedback"></div>
     </div>
 
-    <script>
+<script>
         // Game State Variables
         let currentAnswer = 0;
         let score = 0;
@@ -92,4 +86,38 @@
             equationEl.textContent = `${num1} ${operator} ${num2}`;
         }
 
-        //
+        // Check if the user's answer is correct
+        function checkAnswer(event) {
+            event.preventDefault(); // Prevents page reload on form submit
+
+            // If an equation hasn't been generated yet
+            if (equationEl.textContent === '---') {
+                feedbackEl.textContent = "Click 'Randomize' first!";
+                feedbackEl.className = "feedback incorrect";
+                return;
+            }
+
+            const userAnswer = parseInt(userAnswerEl.value, 10);
+
+            if (userAnswer === currentAnswer) {
+                feedbackEl.textContent = "Good job!";
+                feedbackEl.className = "feedback correct";
+                score += 10;
+                streak++;
+                scoreEl.textContent = score;
+                streakEl.textContent = streak;
+                
+                // Automatically auto-advance to next question after a brief delay
+                setTimeout(generateEquation, 1200);
+            } else {
+                feedbackEl.textContent = `Try again!`;
+                feedbackEl.className = "feedback incorrect";
+                streak = 0;
+                streakEl.textContent = streak;
+                userAnswerEl.select(); // Highlight user input for easy correction
+            }
+        }
+
+        // Initialize the first question when the page loads
+        window.onload = generateEquation;
+    </script>
