@@ -1,6 +1,7 @@
 html, body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;  
   font-family: "Roboto", "Lilita One", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
