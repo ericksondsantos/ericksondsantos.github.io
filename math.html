@@ -15,9 +15,14 @@
         body {
             background: linear-gradient(190deg, #1A05A2, #8F0177);
         }
+        h6 {
+            color: #ffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
     </style>
 <body>
     <div class="game-container">
+        <h6>Keep playing to fill up the sky with stars!</h6>
         <div class="feedback" id="feedback"></div>
         <div class="stats-container">
             <div class="stats">Score <span id="score" class="score">0</span></div>
@@ -116,7 +121,7 @@
             const userAnswer = parseInt(userAnswerEl.value, 10);
 
             if (userAnswer === currentAnswer) {
-                feedbackEl.textContent = "Good job! Keep playing to fill up the sky with stars!";
+                feedbackEl.textContent = "Good job!";
                 feedbackEl.className = "feedback correct";
                 score += 1;
                 streak++;
