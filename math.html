@@ -11,6 +11,11 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
+    <style>
+        body {
+            background: linear-gradient(190deg, #3B1C32, #1A1A1D);
+        }
+    </style>
 <body>
     <div class="game-container">
         <div class="stats-container">
@@ -111,22 +116,52 @@
             const userAnswer = parseInt(userAnswerEl.value, 10);
 
             if (userAnswer === currentAnswer) {
-                feedbackEl.textContent = "Good job!";
+                feedbackEl.textContent = "Good job! Keep playing to fill up the sky with stars!";
                 feedbackEl.className = "feedback correct";
-                score += 10;
+                score += 1;
                 streak++;
                 scoreEl.textContent = score;
                 streakEl.textContent = streak;
                 
                 // Automatically auto-advance to next question after a brief delay
                 setTimeout(generateEquation, 1200);
+                createStar();
             } else {
                 feedbackEl.textContent = `Try again!`;
                 feedbackEl.className = "feedback incorrect";
+                score -= 1;
                 streak = 0;
+                scoreEl.textContent = score;
                 streakEl.textContent = streak;
                 userAnswerEl.select(); // Highlight user input for easy correction
             }
+        }
+
+        function createStar() {
+            const star = document.createElement('div');
+            star.classList.add('star');
+
+            // Determine a random size between 2px and 5px
+            const size = Math.random() * 3 + 2;
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+
+            // Pick a random X and Y coordinate based on the window's dimensions
+            const randomX = Math.random() * window.innerWidth;
+            const randomY = Math.random() * window.innerHeight;
+            star.style.left = `${randomX}px`;
+            star.style.top = `${randomY}px`;
+
+            // Give it a subtle random color variation (white, light blue, or soft yellow)
+            const colors = ['#ffffff', '#ffffff', '#e0f2fe', '#fef08a'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            star.style.backgroundColor = randomColor;
+            
+            // Add a soft glow that matches its color
+            star.style.boxShadow = `0 0 ${size * 2}px ${randomColor}`;
+
+            // Append the newly created star to the body
+            document.body.appendChild(star);
         }
 
         // Initialize the first question when the page loads
