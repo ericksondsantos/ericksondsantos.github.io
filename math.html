@@ -18,6 +18,7 @@
     </style>
 <body>
     <div class="game-container">
+        <div class="feedback" id="feedback"></div>
         <div class="stats-container">
             <div class="stats">Score <span id="score" class="score">0</span></div>
             <div class="stats">Streak <span id="streak" class="streak">0</span></div>
@@ -31,7 +32,6 @@
                 <button type="submit" class="submit-btn">Submit</button>
                 <button class="randomize-btn" id="next-btn" onclick="generateEquation()">Randomize</button>
             </div>
-            <div class="feedback" id="feedback"></div>
         </form>
     </div>
     <footer class="footer" id="contact">
@@ -122,9 +122,8 @@
                 streak++;
                 scoreEl.textContent = score;
                 streakEl.textContent = streak;
-                
                 // Automatically auto-advance to next question after a brief delay
-                setTimeout(generateEquation, 1200);
+                setTimeout(generateEquation, 2400);
                 createStar();
             } else {
                 feedbackEl.textContent = `Try again!`;
