@@ -1,7 +1,7 @@
 html, body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;  
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
   font-family: "Roboto", "Lilita One", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -10,6 +10,8 @@ html, body {
   color: #ffffff;
   background: linear-gradient(190deg, #58014a, #110468);
   background-attachment: fixed;
+  margin: 0;
+  padding: 0;
 }
 
 .profile {
@@ -23,7 +25,7 @@ html, body {
 }
 
 .container{
-  margin: 2rem;
+  margin: 2rem auto;
   padding: 5rem;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.25);
@@ -36,4 +38,18 @@ html, body {
   padding: 2rem;
   background-color: rgba(255, 255, 255, 0.5);
   font-family: "Roboto", sans-serif;
+}
+
+a:link, a.visited, a:hover, a:active {
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.quotation {
+  font-size: 0.7rem;
+  font-style: italic;
+  color: #ffffff;
+  margin-top: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
