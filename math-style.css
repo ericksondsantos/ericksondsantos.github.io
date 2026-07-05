@@ -1,11 +1,11 @@
-h6, .score, .streak {
+h6, .stats, .score, .streak {
+  margin: 1rem;
   color: #ffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .game-container {
-  max-width: 100vw;
-  padding: 2rem;
+  max-width: 100dvw;
   margin: 2%;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.25);
@@ -27,19 +27,20 @@ h6, .score, .streak {
   padding: 1rem;
   margin: 1rem;
   color: #000000;
-  font-size: 2rem; 
 }
 
 .score, .streak { 
+  font-size: 1.5rem;
   color: #38a169; 
 }
 
 .streak { 
+  font-size: 1.5rem;
   color: #dd6b20; 
 }
 
 .equation {
-  font-size: 10vw;
+  font-size: 10dvw;
   font-weight: bold;
   color: #ffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -47,11 +48,17 @@ h6, .score, .streak {
   margin: 1rem;
 }
 
-.game-container input[type="number"] {
+.input-container {
+  display: flex; 
+  align-items: center;
+}
+
+.game-container input {
   width: 100%;
   box-sizing: border-box;
   padding: 1rem;
-  font-size: 2rem;
+  margin: 1rem;
+  font-size: 5dvw;
   border: 2px solid #cbd5e0;
   border-radius: 15px;
   text-align: center;

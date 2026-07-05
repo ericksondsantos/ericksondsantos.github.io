@@ -22,12 +22,10 @@
         </div>
         <div class="equation" id="equation">---</div>
         <form id="game-form" onsubmit="checkAnswer(event)">
-            <div class="answer">
-                <input type="number" id="user-answer" placeholder="Answer" required autocomplete="off">
-            </div>
-            <div class="btn-container">
-                <button type="submit" class="submit-btn">Submit</button>
-                <button class="randomize-btn" id="next-btn" onclick="generateEquation()">Randomize</button>
+            <div class="input-container">
+                <button class="randomize-btn" id="next-btn" onclick="generateEquation()">&#x21BB</button>
+                <input type="number" id="user-answer" placeholder="..." required autocomplete="off">
+                <button type="submit" class="submit-btn">&#x27A4</button>
             </div>
         </form>
     </div>
