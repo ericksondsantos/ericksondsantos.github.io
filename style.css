@@ -1,35 +1,28 @@
-html, body {
+body {
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+  grid-template-rows: auto auto auto;
+  min-height: 100dvh;
   font-family: "Roboto", "Lilita One", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings: "width" 100;
   font-size: 1rem;
   color: #ffffff;
   background: linear-gradient(45deg, #58014a, #110468);
   background-attachment: fixed;
-  margin: 0;
-  padding: 0;
 }
 
 .profile {
-  width: 100%;
+  width: 100dvw;
+  height: 100dvh;
   background: url("./Images/profile.png");
   background-size:cover;
   background-position: center;
   padding: 5rem;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
 }
 
 .container{
-  margin: 2rem auto;
   padding: 5rem;
-  border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .footer {
