@@ -14,8 +14,8 @@
     </head>
 <body>
     <div class="game-container">
-        <h6>Fill up the sky with stars!</h6>
         <div class="feedback" id="feedback"></div>
+        <h3>Fill up the sky with stars!</h3>
         <div class="stats-container">
             <div class="stats"><span id="score" class="score">0</span><br>Score<br></div>
             <div class="stats"><span id="streak" class="streak">0</span><br>Streak<br></div>
@@ -23,9 +23,9 @@
         <div class="equation" id="equation">---</div>
         <form id="game-form" onsubmit="checkAnswer(event)">
             <div class="input-container">
-                <button class="randomize-btn" id="next-btn" onclick="generateEquation()">&#x21BB</button>
-                <input type="number" id="user-answer" placeholder="..." required autocomplete="off">
                 <button type="submit" class="submit-btn">&#x27A4</button>
+                <input type="number" id="user-answer" placeholder="..." required autocomplete="off">
+                <button class="randomize-btn" id="next-btn" onclick="generateEquation()">&#x21BB</button>
             </div>
         </form>
     </div>
