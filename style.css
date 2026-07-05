@@ -8,7 +8,7 @@ html, body {
   font-variation-settings: "width" 100;
   font-size: 1rem;
   color: #ffffff;
-  background: linear-gradient(190deg, #58014a, #110468);
+  background: linear-gradient(45deg, #58014a, #110468);
   background-attachment: fixed;
   margin: 0;
   padding: 0;
@@ -40,7 +40,7 @@ html, body {
   font-family: "Roboto", sans-serif;
 }
 
-a:link, a.visited, a:hover, a:active {
+a:link, a.visited, a:hover, a:active, a:focus {
   color: #ffffff;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);

@@ -12,26 +12,17 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="math-style.css">
     </head>
-    <style>
-        body {
-            background: linear-gradient(190deg, #1A05A2, #8F0177);
-        }
-        h6 {
-            color: #ffff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-    </style>
 <body>
     <div class="game-container">
-        <h6>Keep playing to fill up the sky with stars!</h6>
+        <h6>Fill up the sky with stars!</h6>
         <div class="feedback" id="feedback"></div>
         <div class="stats-container">
-            <div class="stats">Score <span id="score" class="score">0</span></div>
-            <div class="stats">Streak <span id="streak" class="streak">0</span></div>
+            <div class="stats"><span id="score" class="score">0</span><br>Score<br></div>
+            <div class="stats"><span id="streak" class="streak">0</span><br>Streak<br></div>
         </div>
         <div class="equation" id="equation">---</div>
         <form id="game-form" onsubmit="checkAnswer(event)">
-            <div class="input-section">
+            <div class="answer">
                 <input type="number" id="user-answer" placeholder="Answer" required autocomplete="off">
             </div>
             <div class="button-container">
@@ -40,14 +31,11 @@
             </div>
         </form>
     </div>
-    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2339129783&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-    <footer class="footer" id="contact">
-      <div class="bottom-container">
+    <footer class="footer">
         <a class="footer-link" href="https://www.linkedin.com/in/ericksondsantos/">LinkedIn</a> | 
         <a class="footer-link" href="mailto:ericksondsantos@gmail.com">Email</a> | 
         <a class="footer-link" href="https://ericksondsantos.github.io/">Website</a> | 
         <a class="footer-link" href="https://ericksondsantos.github.io/math.html">Math Game</a>
-        <p class="quotation">“Nothing is more difficult, and therefore more precious, than to be able to decide.” -Napoleon Bonaparte</p>
-      </div>
+        <p class="quotation">“Nothing is more difficult, and therefore more precious, than to be able to decide.”</p>
     </footer>
 <script src="/math.js"></script>

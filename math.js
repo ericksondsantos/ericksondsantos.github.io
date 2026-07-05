@@ -77,12 +77,14 @@
                 scoreEl.textContent = score;
                 streakEl.textContent = streak;
                 // Automatically auto-advance to next question after a brief delay
-                setTimeout(generateEquation, 2400);
+                setTimeout(generateEquation, 1200);
                 createStar();
             } else {
                 feedbackEl.textContent = `Try again!`;
                 feedbackEl.className = "feedback incorrect";
-                score -= 1;
+                if (score > 0) {
+                    score -= 1;
+                }
                 streak = 0;
                 scoreEl.textContent = score;
                 streakEl.textContent = streak;
