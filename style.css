@@ -23,7 +23,7 @@ html, body {
 }
 
 .container{
-  margin: 2rem auto;
+  margin: 2rem;
   padding: 5rem;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.25);
