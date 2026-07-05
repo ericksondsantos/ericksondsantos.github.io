@@ -7,177 +7,33 @@ html, body {
   font-style: normal;
   font-variation-settings: "width" 100;
   font-size: 1rem;
-  background: linear-gradient(190deg, #EAE0CF, #94B4C1, #547792);
+  color: #ffffff;
+  background: linear-gradient(190deg, #58014a, #110468);
   background-attachment: fixed;
 }
 
 .profile {
-  max-width: 50%;
-  height: auto;
-  border-radius: 100%;
+  width: 100%;
+  background: url("./Images/profile.png");
+  background-size:cover;
+  background-position: center;
+  padding: 5rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
-.sub-container {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  max-width: 100vw;
-  max-height: 100vh;
+.container{
+  margin: 2rem auto;
+  padding: 5rem;
   border-radius: 15px;
-  margin: 1%;
-  padding: 5%;
   background-color: rgba(255, 255, 255, 0.25);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.grid-container, .game-container, .stats {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  max-width: 100vw;
-  max-height: 100vh;
-  border-radius: 15px;
-  margin: 1%;
-  padding: 5%;
-  background-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.game-container {
-  flex: 1;
-  justify-content: center;
-}
-
-.profile {
-  text-align: center;
-  padding: 2%;
-}
-
-.stats-container, .button-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: stretch;
-  align-items: stretch;
-  gap: 1rem;
-}
-
-.stats {
-  background-color: rgba(255, 255, 255);
-  padding: 1rem 1rem;
-  margin: 1rem;
-  font-size: 1rem; 
-  font-weight: bold;
-}
-
-.score { 
-  font-size: 2rem;
-  color: #38a169; 
-}
-
-.streak { 
-  font-size: 2rem;
-  color: #dd6b20; 
-}
-
-.equation {
-  font-size: 5rem;
-  font-weight: bold;
-  color: #ffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 1rem;
-  letter-spacing: 5px;
-}
-
-.input-section {
-  display: flex;
-  gap: 1rem;
-  margin: 2rem;
-}
-
-input[type="number"] {
-  flex: 1;
-  padding: 1rem;
-  font-size: 2rem;
-  border: 2px solid #cbd5e0;
-  border-radius: 15px;
-  text-align: center;
-  transition: border-color 0.2s;
-}
-
-input[type="number"]:focus::placeholder {
-  border-color: #667eea;
-  opacity: 0;
-}
-
-/* Remove arrows from number input */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.submit-btn {
-  background-color: #4274D9;
-}
-
-.submit-btn:hover { 
-  background-color: #153981; 
-}
-
-.randomize-btn {
-  background-color: #dd6b20;
-}
-
-.randomize-btn:hover { 
-  background-color: #a54e14; 
-}
-
-.submit-btn, .randomize-btn {
-  padding: 1rem;
-  color: white;
-  font-size: 1.2rem;
-  border: none;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-  transition: all 0.2s;
-}
-
-.feedback {
-  font-size: 1.2rem;
-  height: 2rem;
-  margin-top: 1rem;
-  transition: color 0.2s;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.correct { 
-  color: #ffffff; 
-}
-.incorrect { 
-  color: #e53e3e; 
-}
-
-.star {
-  position: absolute;
-  background-color: #fff;
-  border-radius: 50%;
-  animation: twinkle 1s infinite alternate ease-in-out;
-  pointer-events: none;
-}
-
-
-@keyframes twinkle {
-  0% { opacity: 0.4; transform: scale(0.8); }
-  100% { opacity: 1; transform: scale(1.2); }
 }
 
 .footer {
   text-align: center;
   width: 100%;
-  padding: 2%;
+  padding: 2rem;
   background-color: rgba(255, 255, 255, 0.5);
-  flex-shrink: 0;
   font-family: "Roboto", sans-serif;
 }
