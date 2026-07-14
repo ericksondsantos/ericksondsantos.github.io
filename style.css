@@ -1,10 +1,8 @@
 body {
   display: grid;
   grid-template-rows: auto auto auto;
-  min-height: 100dvh;
   font-family: "Roboto", "Lilita One", sans-serif;
   font-style: normal;
-  font-size: 1rem;
   color: #ffffff;
   background: linear-gradient(45deg, #58014a, #110468);
   background-attachment: fixed;
@@ -16,7 +14,6 @@ h2 {
 
 .profile {
   width: 100dvw;
-  height: 100dvh;
   background: url("./Images/profile.png");
   background-size:cover;
   background-position: center;
@@ -25,7 +22,7 @@ h2 {
 }
 
 .container{
-  max-width: calc(100dvw - 4%);
+  max-width: 100dvw;
   padding: 5rem;
   margin: 2%;
   border-radius: 15px;
