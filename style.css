@@ -10,6 +10,10 @@ body {
   background-attachment: fixed;
 }
 
+h2 {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+}
+
 .profile {
   width: 100dvw;
   height: 100dvh;
@@ -18,11 +22,15 @@ body {
   background-position: center;
   padding: 5rem;
   text-align: center;
-  text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
 }
 
 .container{
+  max-width: calc(100dvw - 4%);
   padding: 5rem;
+  margin: 2%;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .footer {

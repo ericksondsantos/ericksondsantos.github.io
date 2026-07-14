@@ -3,7 +3,7 @@ h3, .stats, .score, .streak {
 }
 
 .game-container {
-  max-width: 100dvw;
+  max-width: calc(100dvw - 4%);
   min-height: 100dvh;
   margin: 2%;
   border-radius: 15px;
