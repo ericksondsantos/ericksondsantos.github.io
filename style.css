@@ -33,13 +33,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-a:link, a.visited, a:hover, a:active, a:focus {
+.footer a {
   color: #ffffff;
-  font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
-.quotation {
+.quote {
   font-size: 0.7rem;
   font-style: italic;
   color: #ffffff;
