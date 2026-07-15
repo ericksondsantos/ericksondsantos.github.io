@@ -2,7 +2,7 @@ h3, .stats, .score, .streak {
   margin: 1rem;
 }
 
-.game-container {
+.gameContainer {
   max-width: 100dvw;
   min-height: 100dvh;
   margin: 2%;
@@ -13,7 +13,7 @@ h3, .stats, .score, .streak {
   text-align: center;
 }
 
-.stats-container, .btn-container {
+.statsContainer, .btnContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 1rem;
@@ -47,12 +47,12 @@ h3, .stats, .score, .streak {
   margin: 1rem;
 }
 
-.input-container {
+.inputContainer {
   display: flex; 
   align-items: center;
 }
 
-.game-container input {
+.gameContainer input {
   width: 100%;
   box-sizing: border-box;
   padding: 1rem;
@@ -75,27 +75,27 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.submit-btn {
+.submitBtn {
   padding: 1rem;
   margin: 1rem;
   background-color: #4274D9;
 }
 
-.submit-btn:hover { 
+.submitBtn:hover { 
   background-color: #153981; 
 }
 
-.randomize-btn {
+.randomizeBtn {
   padding: 1rem;
   margin: 1rem;
   background-color: #dd6b20;
 }
 
-.randomize-btn:hover { 
+.randomizeBtn:hover { 
   background-color: #a54e14; 
 }
 
-.submit-btn, .randomize-btn {
+.submitBtn, .randomizeBtn {
   padding: 1rem;
   color: white;
   font-size: 2rem;
