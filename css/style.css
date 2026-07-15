@@ -15,7 +15,7 @@ h2 {
 .profile {
   width: 100dvw;
   height: 100dvh;
-  background: url("./Images/profile.png");
+  background: url("/images/profile.png");
   background-size:cover;
   background-position: center;
   padding: 5rem;
